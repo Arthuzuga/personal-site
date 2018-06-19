@@ -1,0 +1,59 @@
+{
+  "name": "mobx-react-router4-typescript-sass-boilerplate",
+  "version": "1.0.0",
+  "description": "My Personal website using React + Typescript + MobX",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --progress --colors --hot",
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arthuzuga/joaotavar.es.git"
+  },
+  "keywords": [
+    "mobx",
+    "react",
+    "boilerplate",
+    "sass",
+    "typescript"
+  ],
+  "author": "Joao Tavares",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.3.2",
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-router": "^4.0.26",
+    "@types/react-router-dom": "^4.2.7",
+    "copy-webpack-plugin": "^4.5.1",
+    "core-js": "^2.5.7",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.1.5",
+    "node-sass": "^4.9.0",
+    "react-hot-loader": "^4.3.1",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.1",
+    "tslib": "^1.9.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.1",
+    "url-loader": "^1.0.1",
+    "webapp-webpack-plugin": "^2.2.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.4",
+    "webpack-combine-loaders": "^2.0.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "mobx": "^5.0.2",
+    "mobx-react": "^5.2.3",
+    "mobx-react-router": "^4.0.4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  }
+}
