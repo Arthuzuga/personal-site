@@ -5,15 +5,11 @@ import { Router } from "react-router";
 import { RouterStore, syncHistoryWithStore } from "mobx-react-router";
 import createBrowserHistory from "history/createBrowserHistory";
 
-import { CounterStore } from "./stores";
-
 import App from "./containers/App";
 
 const routerStore = new RouterStore();
-const counterStore = new CounterStore();
 const rootStore = {
 	routerStore,
-	counterStore,
 };
 
 const browserHistory = createBrowserHistory();
