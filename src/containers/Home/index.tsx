@@ -2,7 +2,8 @@ import * as React from "react";
 import { inject, observer } from "mobx-react";
 import { Button, notification } from "antd";
 import { RouterStore } from "mobx-react-router";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
+import "../../antd.css";
 
 const s = require("./style.scss");
 const photo = require("../../assets/img/personalPhoto.jpg");

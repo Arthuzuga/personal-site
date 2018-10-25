@@ -3,7 +3,7 @@ import { inject, observer } from "mobx-react";
 import { Collapse, Timeline, Tree, Icon, Divider } from "antd";
 import { RouterStore } from "mobx-react-router";
 import { ScrollToTopOnMount, SectionsContainer, Section } from "react-fullpage";
-import "antd/dist/antd.css";
+import "../../antd.css";
 const s = require("./style.scss");
 // const photo = require("../../assets/img/personalPhoto.jpg");
 
