@@ -1,0 +1,49 @@
+.sectionResume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0.8;
+    overflow: hidden;
+    background: url("../../assets/img/resume.jpg") center no-repeat;
+    object-fit: cover;
+}
+
+
+.resumeBox{
+    width: 50%;
+    padding: 4.5rem;
+    border-radius: 20px;
+    background: gainsboro;
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+}
+.resumeHeader {
+    text-align: center;
+    margin-top: 16px;
+}
+.photoDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .photo {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: solid 5px #FAFAFA;
+        object-fit: cover;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.7);
+    }
+}
