@@ -41,7 +41,7 @@ export const timelineSteps: ITimeline[] = [
 			"Como estagiário na gerência de Elétrica e Climatização, desenvolvi um sistema de supervisão da energia elétrica a fim de monitorar o comportamento da alimentação dos circuitos da empresa.",
 			"Como estagiário na coordenadoria de Projetos, trabalhei com metodologias de gerenciamento de projetos baseadas no PMBOK®. Nelas utilizei conhecimentos como análise de caminho crítico, análise PERT e gráfico de Pareto para custos e indicadores de projetos baseados em valor agregado, para gerir juntamente com os supervisores a construção da infraestrutura da Nova Central Técnica da emissora e demais projetos executivos.",
 		],
-		job: ["stagiário Rede Bahia   - Out/2015 - Out/2017"],
+		job: ["Estagiário Rede Bahia   - Out/2015 - Out/2017"],
 	},
 	{
 		companyName: "Cubos Tecnologia",
