@@ -1,6 +1,6 @@
 import * as React from "react";
 import { inject, observer } from "mobx-react";
-import { Collapse, Timeline, Tree, Icon } from "antd";
+import { Collapse, Timeline, Tree, Icon, Divider } from "antd";
 import { RouterStore } from "mobx-react-router";
 import { ScrollToTopOnMount, SectionsContainer, Section } from "react-fullpage";
 import "antd/dist/antd.css";
@@ -13,7 +13,7 @@ interface IProps {
 
 const options = {
 	activeClass: "active", // the class that is appended to the sections links
-	anchors: ["Resume", "Timeline", "TreeOfSkills", "CarouselOfProjects"], // the anchors for each sections
+	anchors: ["Resume", "Timeline", "TreeOfSkills"], // the anchors for each sections
 	arrowNavigation: true, // use arrow keys
 	className: "SectionContainer", // the class name for the section container
 	delay: 1000, // the scroll animation speed
@@ -78,6 +78,7 @@ const skillsArray = [
 		iconType: "team",
 	},
 ];
+const photo = require("../../assets/img/personalPhoto.jpg");
 
 @inject("routerStore")
 @observer
@@ -93,7 +94,32 @@ export class Profile extends React.Component<IProps, {}> {
 				<SectionsContainer {...options}>
 					<Section style={{ height: "100vh" }}>
 						<div className={s.sectionResume}>
-							<div>ResumePage</div>
+							<div className={s.resumeBox}>
+								<div className={s.photoDiv}>
+									<img src={photo} className={s.photo} alt="Avatar" />
+								</div>
+								<div className={s.resumeHeader}>
+									<h1>João Tavares</h1>
+									<h2>Engenheiro de Controle e Automação</h2>
+									<h2>Desenvolvedor Front-End</h2>
+									<h3>Salvador - Bahia</h3>
+								</div>
+								<Divider style={{ background: "#000" }} />
+								<p>Oi, eu sou o João! </p>
+								<p>
+									Sou um entusiasta por tecnologia que gosta de ver o impacto
+									positivo que ela pode causar no conhecimento da sociedade.{" "}
+								</p>
+								<p>
+									Como programador trabalho com soluções em JavaScript, bem como
+									sistemas em Java para Android's apps.
+								</p>
+								<p>
+									Como Engenheiro de Automação trabalho com solução de sistema
+									de controle e aquisição de dados (SCADA) para transformar
+									dados em resolução de problemas.
+								</p>
+							</div>
 						</div>
 					</Section>
 					<Section style={{ height: "100vh" }}>
@@ -299,11 +325,11 @@ export class Profile extends React.Component<IProps, {}> {
 							</div>
 						</div>
 					</Section>
-					<Section style={{ height: "100vh" }}>
+					{/* <Section style={{ height: "100vh" }}>
 						<div className={s.sectionDivLight}>
 							Page 4: Carousel of Projects
 						</div>
-					</Section>
+					</Section> */}
 				</SectionsContainer>
 			</div>
 		);
