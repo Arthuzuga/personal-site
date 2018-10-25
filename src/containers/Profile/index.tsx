@@ -1,9 +1,11 @@
 import * as React from "react";
 import { inject, observer } from "mobx-react";
-import { Collapse, Timeline, Tree, Icon, Divider } from "antd";
+import { Tree, Icon } from "antd";
 import { RouterStore } from "mobx-react-router";
 import { ScrollToTopOnMount, SectionsContainer, Section } from "react-fullpage";
 import "../../antd.css";
+import { ResumeSection } from "../ResumeSection";
+import { TimelineSection } from "../TimelineSection";
 const s = require("./style.scss");
 // const photo = require("../../assets/img/personalPhoto.jpg");
 
@@ -25,7 +27,7 @@ const options = {
 	verticalAlign: true, // align the content of each section vertical
 };
 
-const Panel = Collapse.Panel;
+// const Panel = Collapse.Panel;
 const TreeNode = Tree.TreeNode;
 const skillsArray = [
 	{
@@ -78,7 +80,7 @@ const skillsArray = [
 		iconType: "team",
 	},
 ];
-const photo = require("../../assets/img/personalPhoto.jpg");
+// const photo = require("../../assets/img/personalPhoto.jpg");
 
 @inject("routerStore")
 @observer
@@ -92,37 +94,8 @@ export class Profile extends React.Component<IProps, {}> {
 			<div>
 				<ScrollToTopOnMount />
 				<SectionsContainer {...options}>
-					<Section style={{ height: "100vh" }}>
-						<div className={s.sectionResume}>
-							<div className={s.resumeBox}>
-								<div className={s.photoDiv}>
-									<img src={photo} className={s.photo} alt="Avatar" />
-								</div>
-								<div className={s.resumeHeader}>
-									<h1>João Tavares</h1>
-									<h2>Engenheiro de Controle e Automação</h2>
-									<h2>Desenvolvedor Front-End</h2>
-									<h3>Salvador - Bahia</h3>
-								</div>
-								<Divider style={{ background: "#000" }} />
-								<p>Oi, eu sou o João! </p>
-								<p>
-									Sou um entusiasta por tecnologia que gosta de ver o impacto
-									positivo que ela pode causar na sociedade.
-								</p>
-								<p>
-									Como desenvolvedor trabalho com soluções em JavaScript e
-									sistemas em Java para aplicativos Android.
-								</p>
-								<p>
-									Como Engenheiro de Automação trabalho com criação de sistema
-									de controle e aquisição de dados (SCADA) para transformar
-									informação em resolução de problemas.
-								</p>
-							</div>
-						</div>
-					</Section>
-					<Section style={{ height: "100vh" }}>
+					<ResumeSection/>
+					{/* <Section style={{ height: "100vh" }}>
 						<div className={s.sectionDivLight}>
 							<h1>Histórico Profissional</h1>
 							<h2>Conheça um pouco da minha trajetória.</h2>
@@ -294,7 +267,8 @@ export class Profile extends React.Component<IProps, {}> {
 								</Timeline>
 							</div>
 						</div>
-					</Section>
+					</Section> */}
+					<TimelineSection/>
 					<Section style={{ height: "100vh" }}>
 						<div className={s.sectionAreas}>
 							<h1>Áreas de Conhecimento</h1>
