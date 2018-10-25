@@ -20,9 +20,10 @@ export class Home extends React.Component<IProps, {}> {
 	};
 
 	private openNotification = () => {
-		notification.open({
+		notification.warning({
 			message: "Mensagem da Matrix",
 			description: "Infelizmente as máquinas não permitiram essa ação ainda",
+			duration: 2,
 		});
 	}
 
