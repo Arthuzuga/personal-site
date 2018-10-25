@@ -1,0 +1,32 @@
+
+.timelineBox {
+    width: 50%;
+    padding: 4.5rem;
+    border-radius: 20px;
+    background: gainsboro;
+    opacity: 0.8;
+}
+
+.sectionDivLight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0.8;
+    overflow: hidden;
+    background: #a7c0cd;
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+.collapseDiv {
+    display: flex;
+    flex-direction: column;
+    span {
+        margin: 2px 0;
+    }
+}
