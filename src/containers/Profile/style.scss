@@ -21,15 +21,13 @@
 
 }
 .sectionAreas {
-    background: url("../../assets/img/workBGFilter.png") center no-repeat;
+    background-image: url("../../assets/img/workBGGood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     object-fit: cover;
+    background-position: center;
     h1, h2 {
         color: white;
-        text-shadow:
-            -1px -1px 0 #474747,  
-            1px -1px 0 #474747,
-            -1px 1px 0 #474747,
-            1px 1px 0 #474747;
     }
   
 }
@@ -48,9 +46,6 @@
 }
 .treeBox {
     width: 65%;
-    padding: 3rem;
-    border-radius: 20px;
-    background: gainsboro;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
