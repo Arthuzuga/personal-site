@@ -1,6 +1,6 @@
 import * as React from "react";
 import { inject, observer } from "mobx-react";
-import { Button } from "antd";
+import { Button, notification } from "antd";
 import { RouterStore } from "mobx-react-router";
 
 const s = require("./style.scss");
@@ -16,6 +16,14 @@ export class Home extends React.Component<IProps, {}> {
 	private goTo = (path: string) => {
 		this.props.routerStore.push(path);
 	};
+
+	private openNotification = () => {
+		notification.open({
+			message: "Mensagem da Matrix",
+			description: "Infelizmente as máquinas não permitiram essa ação ainda",
+		});
+	}
+
 	public render() {
 		return (
 			<div className={s.container}>
@@ -41,7 +49,7 @@ export class Home extends React.Component<IProps, {}> {
 						<Button
 							type="primary"
 							className={s.buttonBlog}
-							onClick={() => this.goTo("/")}
+							onClick={this.openNotification}
 						>
 							Blog <br /> Pessoal
 						</Button>
