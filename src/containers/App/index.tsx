@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { hot } from "react-hot-loader";
 
 import { Home } from "../Home";
-import { ProfissionalProfile } from "../ProfessionalProfile";
+import { Profile } from "../Profile";
 
 require("./style.scss");
 
@@ -14,7 +14,8 @@ class App extends React.Component {
 				<Switch>
 					<Route exact path="/" render={() => <Redirect to="/home" />} />
 					<Route path="/home" component={Home} />
-					<Route path="/profile" component={ProfissionalProfile} />
+					<Route path="/profile" component={Profile} />
+					{/* <Route path="*" component={Page404} /> */}
 				</Switch>
 			</React.Fragment>
 		);
