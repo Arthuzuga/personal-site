@@ -108,16 +108,16 @@ export class Profile extends React.Component<IProps, {}> {
 								<p>Oi, eu sou o João! </p>
 								<p>
 									Sou um entusiasta por tecnologia que gosta de ver o impacto
-									positivo que ela pode causar no conhecimento da sociedade.{" "}
+									positivo que ela pode causar na sociedade.
 								</p>
 								<p>
-									Como programador trabalho com soluções em JavaScript, bem como
-									sistemas em Java para Android's apps.
+									Como desenvolvedor trabalho com soluções em JavaScript e
+									sistemas em Java para aplicativos Android.
 								</p>
 								<p>
-									Como Engenheiro de Automação trabalho com solução de sistema
+									Como Engenheiro de Automação trabalho com criação de sistema
 									de controle e aquisição de dados (SCADA) para transformar
-									dados em resolução de problemas.
+									informação em resolução de problemas.
 								</p>
 							</div>
 						</div>
