@@ -21,9 +21,9 @@ export class Home extends React.Component<IProps, {}> {
 
 	private openNotification = () => {
 		notification.warning({
-			message: "Mensagem da Matrix",
+			message: "Opss...",
 			description: "Infelizmente as máquinas não permitiram essa ação ainda",
-			duration: 2,
+			duration: 4,
 		});
 	}
 
