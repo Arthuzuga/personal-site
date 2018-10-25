@@ -16,7 +16,7 @@ export class TimelineSection extends React.Component<{}, {}> {
 					<div className={s.timelineBox}>
 						<Timeline>
 							{timelineSteps.map((item, index) => (
-								<TimelineItem item={item} index={index} />
+								<TimelineItem item={item} index={index} key={index}/>
 							))}
 						</Timeline>
 					</div>
