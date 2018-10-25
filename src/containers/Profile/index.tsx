@@ -6,10 +6,13 @@ import "../../antd.css";
 import { ResumeSection } from "../ResumeSection";
 import { TimelineSection } from "../TimelineSection";
 import { TreeSection } from "../TreeSection";
+import { Button } from "antd";
 
 interface IProps {
 	routerStore: RouterStore;
 }
+
+const s = require("./style.scss");
 
 const options = {
 	activeClass: "active", // the class that is appended to the sections links
@@ -28,13 +31,14 @@ const options = {
 @inject("routerStore")
 @observer
 export class Profile extends React.Component<IProps, {}> {
-	// private goTo = (path: string) => {
-	// 	this.props.routerStore.push(path);
-	// };
+	private goTo = (path: string) => {
+		this.props.routerStore.push(path);
+	};
 
 	public render() {
 		return (
 			<div>
+				<Button className={s.backToHome} onClick={() => this.goTo("/")}>Home</Button>
 				<ScrollToTopOnMount />
 				<SectionsContainer {...options}>
 					<ResumeSection />

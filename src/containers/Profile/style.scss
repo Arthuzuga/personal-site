@@ -4,6 +4,19 @@
         color: white;
     }
 }
+
+.backToHome {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 25px;
+    background: #3773b7;
+    font-size: 12px; 
+    opacity: 0.8;
+    color: #FAFAFA;
+}
+
 .sectionDivDark, .sectionDivLight, .sectionAreas {
     display: flex;
     flex-direction: column;
