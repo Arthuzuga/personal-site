@@ -1,7 +1,11 @@
 .collapseDiv {
     display: flex;
     flex-direction: column;
+    color: #4b636e;
     span {
         margin: 2px 0;
     }
+}
+.nameHeader {
+    color: #4b636e;
 }

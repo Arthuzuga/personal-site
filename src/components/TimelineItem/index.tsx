@@ -17,18 +17,19 @@ export class TimelineItem extends React.Component<IProps, {}> {
 		return (
 			<Timeline.Item
 				color={timelineSteps.length - 1 === index ? "blue" : "green"}
-				style={{ width: "100%" }}
+				style={{ width: "100%"}}
 				key={index}
 			>
 				<Collapse
 					bordered={false}
 					accordion
-					style={{ background: "rgb(236,239,241)" }}
+					style={{ background: "rgb(236,239,241)", borderRadius: "0px"  }}
 				>
 					<Panel
 						header={item.companyName}
 						key={(1 + index).toString()}
 						showArrow={true}
+						className={s.nameHeader}
 					>
 						<div className={s.collapseDiv}>
 							<h3>Sobre a {item.companyName}:</h3>

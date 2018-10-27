@@ -12,6 +12,19 @@
     left: 10px;
     border-radius: 25px;
     background: #3773b7;
+    border: #3773b7;
+    font-size: 12px; 
+    opacity: 0.8;
+    color: #FAFAFA;
+}
+.backToHome:hover {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 25px;
+    background: #a92c2c;
+    border: #a92c2c;
     font-size: 12px; 
     opacity: 0.8;
     color: #FAFAFA;

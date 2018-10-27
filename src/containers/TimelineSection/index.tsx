@@ -9,7 +9,7 @@ const s = require("./style.scss");
 export class TimelineSection extends React.Component<{}, {}> {
 	public render() {
 		return (
-			<Section style={{ height: "100vh" }}>
+			<Section style={{ height: "100%" }} >
 				<div className={s.sectionDivLight}>
 					<h1>Histórico Profissional</h1>
 					<h2>Conheça um pouco da minha trajetória.</h2>

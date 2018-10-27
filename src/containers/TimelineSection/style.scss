@@ -1,9 +1,9 @@
 
 .timelineBox {
     width: 50%;
-    padding: 4.5rem;
+    padding: 2rem;
     border-radius: 20px;
-    background: gainsboro;
+    // background: gainsboro;
     opacity: 0.8;
 }
 
@@ -14,8 +14,12 @@
     align-items: center;
     height: 100vh;
     opacity: 0.8;
-    overflow: hidden;
-    background: #a7c0cd;
+    overflow: scroll;
+    // background: #a7c0cd;
+    background: #4b636e;
+    h1, h2 {
+        color: #fafafa;
+    }
     h1 {
         font-size: 4rem;
     }
